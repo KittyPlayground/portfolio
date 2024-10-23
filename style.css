@@ -6,100 +6,78 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    font-display: swap;
-    background: white;
     color: #030303;
-}
-
-header {
-    background: #fcfbfb;
-    color: black;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4px;
-    font-weight: 700;
-}
-
-header ul {
-    display: flex;
-    gap: 20px;
-}
-
-header ul li {
-    list-style: none;
-}
-
-header ul li a {
-    text-decoration: none;
-    color: #030303;
-    padding: 10px;
-    transition: background 0.3s, color 0.3s;
-}
-
-header ul li a:hover {
-    background: #FB6D8E;
-    color: white;
-    border-radius: 5px;
-}
-
-.toggle-btn {
-    font-size: 25px;
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 15px;
 }
 
 .hero {
+    position: relative; /* To contain the ::before pseudo-element */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px;
     height: 100vh;
-    background: linear-gradient(135deg, #FFC1CC, #FFFFFF);
+    text-align: center;
+    overflow: hidden;
 }
 
-.hero-image img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://cdn.dribbble.com/userupload/7807170/file/original-4930b2954133b657d4599e6b880cf7a0.jpg?resize=2048x1181");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+    transform: scale(1.1);
 }
 
 .hero-content {
-    text-align: center;
-    max-width: 600px;
+    z-index: 1;
+    color: white;
 }
+
 
 .hero-content h1 {
     font-size: 2.5rem;
-    color: #FF5E78;
+    color: #FF5E78; /* Girlish color */
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin: 20px 0;
-    color: #333;
+    color: #fcfbfb;
 }
 
-.hero .btn {
-    padding: 15px 30px;
-    background-color: #FF5E78;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.widgets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.hero .btn:hover {
-    background-color: #FA3D5A;
+.widget {
+    background-color: #FB6D8E; /* Widget background color */
+    color: white; /* Text color */
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+    flex: 1 1 calc(20% - 20px); /* Responsive widget size */
+    text-align: center; /* Center text */
+    transition: transform 0.3s; /* Smooth transition */
+    cursor: pointer; /* Cursor pointer */
+}
+
+.widget:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
 }
 
 footer {
@@ -111,49 +89,24 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
     .toggle-btn {
-        display: block;
+        display: block; /* Show toggle button on mobile */
     }
 
-    .display-none-mobile {
-        display: none;
-        flex-direction: column;
+    header ul {
+        display: none; /* Hide default menu */
+        flex-direction: column; /* Stack links */
         width: 100%;
     }
 
-    .display-none-mobile.show {
-        display: flex;
+    header ul.show {
+        display: flex; /* Show menu when toggled */
     }
 
-    .display-none-mobile li {
-        margin: 10px 0;
-        text-align: center;
-    }
-    header{
-        padding: 25px 20px;
-    }
-
-    .hero {
-        padding: 20px;
-    }
-
-    .hero-image img {
-        width: 100%;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .hero .btn {
-        font-size: 0.9rem;
+    .widget {
+        flex: 1 1 calc(45% - 20px); /* Adjust widget size for mobile */
     }
 }
