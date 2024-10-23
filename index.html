@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Caveat:wght@400;700&family=Pacifico&family=Quicksand:wght@400;600&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <span class="toggle-btn">&#9776;</span>
+    <ul class="display-none-mobile">
+        <li><a href="#portfolio">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-image">
+            <img src="images/hero.png" alt="Hero Image">
+        </div>
+        <div class="hero-content">
+            <h1>Hi, I'm Kawodya Arachchige</h1>
+            <p>I'm a designer who loves creating stylish, modern, and colorful designs that capture attention.</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; 2024 Tharu Arachchige. All rights reserved.</p>
+</footer>
+
+<script>
+    window.addEventListener('load', function() {
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const menu = document.querySelector('.display-none-mobile');
+
+        toggleBtn.addEventListener('click', function() {
+            menu.classList.toggle('show');
+        });
+    });
+</script>
+
+</body>
+</html>
