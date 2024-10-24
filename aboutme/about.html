@@ -11,11 +11,15 @@
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
+<div class="cute-particles"></div>
 <header>
   <button class="toggle-btn">
     <i class="fas fa-bars"></i>
   </button>
   <nav class="mobile-nav">
+    <button class="close-btn">
+      <i class="fas fa-times"></i>
+    </button>
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li>
@@ -30,20 +34,18 @@
     <div class="hero-content">
       <h2>About Me</h2>
       <p>Hi! I’m Kawodya Arachchige, a passionate software developer with a love for design. <br>I strive to create stylish and functional designs that captivate audiences.</p>
+      <div class="btn-container">
+        <button id="download" class="btn">Download CV</button>
+      </div>
     </div>
 
-    <!-- First Row of Cards -->
     <div class="details">
       <div class="card bg-background">
         <h3>Background</h3>
-        <p>I hold an HND in Software Engineering and have developed skills in backend and frontend web design, full-stack development, and UI/UX design.</p>
-        <ul>
-          <li><strong>Backend Languages:</strong> Java, Python, C#, Swift</li>
-          <li><strong>Frontend Skills:</strong> JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, React, jQuery</li>
-          <li><strong>Frameworks & Libraries:</strong> Spring, Flask, Hibernate, JavaFX, ASP.NET Core, ASP.NET MVC, EF Core</li>
-          <li><strong>Database:</strong> MySQL</li>
-          <li><strong>Design Tools:</strong> Figma</li>
-        </ul>
+        <p>I hold an HND in Software Engineering and have developed skills in backend and frontend web design, as well as full-stack development. My backend languages include Java, Python, C#, and Swift. On the frontend, I’m proficient in JavaScript, HTML, CSS, and frameworks like React, Tailwind CSS, and Bootstrap.
+
+          I work with frameworks such as Spring, Flask, Hibernate, JavaFX, ASP.NET Core, and ASP.NET MVC, and I use Entity Framework Core with MySQL for database management. Additionally, I have a strong focus on UI/UX design and use Figma to create user-friendly interfaces.</p>
+
       </div>
 
       <div class="card bg-goals">
@@ -72,8 +74,6 @@
       </div>
 
     </div>
-
-    <button class="btn">Download CV</button>
   </section>
 </main>
 
@@ -84,13 +84,18 @@
 <script>
   window.addEventListener('load', function () {
     const toggleBtn = document.querySelector('.toggle-btn');
+    const closeBtn = document.querySelector('.close-btn');
     const mobileNav = document.querySelector('.mobile-nav');
 
     toggleBtn.addEventListener('click', function () {
       mobileNav.classList.toggle('show');
     });
+    closeBtn.addEventListener('click', function () {
+      mobileNav.classList.remove('show');
+    });
   });
 </script>
 <script src="../script.js"></script>
+
 </body>
 </html>
