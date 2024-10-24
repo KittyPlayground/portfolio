@@ -76,7 +76,7 @@ main {
 .mobile-nav {
     position: fixed;
     top: 0;
-    right: -250px;
+    left: -250px;
     background: linear-gradient(135deg, #66B6CC, #FF6CCE);
     width: 250px;
     height: 100%;
@@ -86,7 +86,7 @@ main {
 }
 
 .mobile-nav.show {
-    right: 0;
+    left: 0;
 }
 
 .mobile-nav ul {
@@ -132,8 +132,13 @@ main {
 .hero-content p{
     color: #66B6CC;
     font-weight: bolder;
+    font-size: 1.1rem;
 }
-
+.hero-content h2 i {
+    margin-right: 8px;
+    font-size: 1.5rem;
+    color: #66B6CC;
+}
 .btn-container {
     display: flex;
     align-items: center;
@@ -180,6 +185,23 @@ p {
     background: linear-gradient(135deg, #66B6CC, #FF6CCE);
 }
 
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.card h3 i {
+    margin-right: 10px;
+    color: #FF6CCE;
+    font-size: 1.5rem;
+}
+
+
+.btn i {
+    margin-right: 8px;
+
+}
 #download {
     background-color:#66B6CC ;
     color: #fff;
@@ -224,11 +246,11 @@ footer {
 @media (max-width: 768px) {
     .mobile-nav {
         width: 100%;
-        right: -100%;
+      left: -100%;
     }
 
     .mobile-nav.show {
-        right: 0;
+        left: 0;
     }
 
     .hero-content h2 {
@@ -265,6 +287,9 @@ footer {
         margin-right: 0;
         margin-bottom: 10px;
     }
+    .achievements{
+        grid-template-columns: 1fr;
+    }
 
 
 }
@@ -290,7 +315,23 @@ footer {
         font-size: 0.9rem;
     }
 }
+.achievements {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
+/* Make the list items display in two columns on larger screens */
+.achievements li {
+    padding: 2px 0;
+}
+
+
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 
 
 
