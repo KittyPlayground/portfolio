@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="service.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="cute-particles"></div>
+<header>
+    <button class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav class="mobile-nav">
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../aboutme/about.html">About Me</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h2><i class="fas fa-cogs"></i> My Services</h2>
+            <p>Explore the range of services I offer to help bring your ideas to life!</p>
+        </div>
+        <div class="details">
+            <div class="card">
+                <h3><i class="fas fa-laptop-code"></i> Web App Development</h3>
+                <div class="card-image">
+                    <img src="../images/s.jpeg" alt="Web App Development">
+                </div>
+                <p>Create responsive and user-friendly web applications.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-desktop"></i> Desktop Application Development</h3>
+                <div class="card-image">
+                    <img src="../images/s.jpeg" alt="Desktop Application Development">
+                </div>
+                <p>Build powerful desktop applications tailored to your needs.</p>
+            </div>
+        </div>
+        <div class="details second-row">
+            <div class="card">
+                <h3><i class="fas fa-paint-brush"></i> UI/UX Designing</h3>
+                <div class="card-image">
+                    <img src="../images/s.jpeg" alt="UI/UX Designing">
+                </div>
+                <p>Design intuitive user interfaces and experiences.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-mobile-alt"></i> Mobile Application Development</h3>
+                <div class="card-image">
+                    <img src="../images/s.jpeg" alt="Mobile Application Development">
+                </div>
+                <p>Develop engaging mobile applications for all platforms.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-ellipsis-h"></i> Other Services</h3>
+                <div class="card-image">
+                    <img src="../images/s.jpeg" alt="Other Services">
+                </div>
+                <p>Additional services to meet your specific needs.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Kawodya Arachchige. All rights reserved.</p>
+</footer>
+
+<script>
+    window.addEventListener('load', function () {
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const closeBtn = document.querySelector('.close-btn');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        toggleBtn.addEventListener('click', function () {
+            mobileNav.classList.toggle('show');
+        });
+        closeBtn.addEventListener('click', function () {
+            mobileNav.classList.remove('show');
+        });
+    });
+</script>
+<script src="../script.js"></script>
+
+</body>
+</html>
