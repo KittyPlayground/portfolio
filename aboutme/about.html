@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="about.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+<header>
+  <button class="toggle-btn">
+    <i class="fas fa-bars"></i>
+  </button>
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>About Me</h2>
+      <p>Hi! I’m Kawodya Arachchige, a passionate software developer with a love for design. <br>I strive to create stylish and functional designs that captivate audiences.</p>
+    </div>
+
+    <!-- First Row of Cards -->
+    <div class="details">
+      <div class="card bg-background">
+        <h3>Background</h3>
+        <p>I hold an HND in Software Engineering and have developed skills in backend and frontend web design, full-stack development, and UI/UX design.</p>
+        <ul>
+          <li><strong>Backend Languages:</strong> Java, Python, C#, Swift</li>
+          <li><strong>Frontend Skills:</strong> JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, React, jQuery</li>
+          <li><strong>Frameworks & Libraries:</strong> Spring, Flask, Hibernate, JavaFX, ASP.NET Core, ASP.NET MVC, EF Core</li>
+          <li><strong>Database:</strong> MySQL</li>
+          <li><strong>Design Tools:</strong> Figma</li>
+        </ul>
+      </div>
+
+      <div class="card bg-goals">
+        <h3>My Goals</h3>
+        <p>My goal is to continuously learn and grow with a positive attitude, enhancing my skills in both development and design.</p>
+      </div>
+    </div>
+    <div class="details second-row">
+      <div class="card bg-achievements">
+        <h3>Achievements</h3>
+        <ul>
+          <li>Completed a full-stack development course.</li>
+          <li>Contributed to open-source projects on GitHub.</li>
+          <li>Created multiple responsive web applications.</li>
+          <li>Awarded for excellence in software engineering.</li>
+        </ul>
+      </div>
+
+      <div class="card bg-interests">
+        <h3>Interests</h3>
+        <p>In my free time, I enjoy playing video games and outdoor games. I also love designing and drawing, as well as feeding animals.</p>
+      </div>
+
+      <div class="card bg-extra">
+        <img src="../images/img.JPEG" alt="Additional Information Image" class="card-image">
+      </div>
+
+    </div>
+
+    <button class="btn">Download CV</button>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Kawodya Arachchige. All rights reserved.</p>
+</footer>
+
+<script>
+  window.addEventListener('load', function () {
+    const toggleBtn = document.querySelector('.toggle-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    toggleBtn.addEventListener('click', function () {
+      mobileNav.classList.toggle('show');
+    });
+  });
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

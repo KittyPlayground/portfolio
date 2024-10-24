@@ -54,10 +54,14 @@ body {
     border: 5px solid #D0E7F5;
     box-shadow: 0 0 10px rgba(255, 94, 120, 0.3);
     display: block;
+    transition: transform 0.5s ease;
+}
+.hero {
+    background-attachment: fixed; /* Creates a parallax effect */
 }
 .hero-content h1 {
     font-size: 2.5rem;
-    color: #FF5E78; /
+    color: #FF5E78;
     margin-bottom: 20px;
     font-weight: 600;
 }
