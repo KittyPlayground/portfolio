@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 
@@ -15,8 +17,26 @@
 <main>
     <section class="hero">
         <div class="hero-content">
-            <h1>Hi, I'm Kawodya Arachchige</h1>
-            <p>I'm a designer who loves creating stylish, modern, and colorful designs that capture attention.</p>
+            <div class="hero-img-container">
+                <img src="images/hero1.PNG" alt="Hero Image" class="hero-img">
+            </div>
+            <h1>Hi, I'm <span style="color: #66B6CC">Kawodya</span> Arachchige</h1>
+            <p>I’m a Software Developer and Designer,<br> sprinkling a bit of creativity and problem-solving magic to bring
+                your ideas to life! <br>Let’s create something wonderful together!</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://dribbble.com" target="_blank" class="social-icon">
+                <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://medium.com" target="_blank" class="social-icon">
+                <i class="fab fa-medium"></i>
+            </a>
         </div>
         <div class="widgets">
             <div class="widget" onclick="location.href='#about'">
@@ -41,17 +61,15 @@
 <footer>
     <p>&copy; 2024 Kawodya Arachchige. All rights reserved.</p>
 </footer>
-
 <script>
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         const toggleBtn = document.querySelector('.toggle-btn');
         const menu = document.querySelector('.display-none-mobile');
 
-        toggleBtn.addEventListener('click', function() {
+        toggleBtn.addEventListener('click', function () {
             menu.classList.toggle('show');
         });
     });
 </script>
-
 </body>
 </html>
