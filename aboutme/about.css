@@ -255,6 +255,21 @@ p {
 .hero,header, main, footer {
     position: relative;
 }
+.achievements {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.achievements li {
+    padding: 2px 0;
+}
+
+
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
 footer {
     padding: 20px;
     background-color: #66B6CC;
@@ -312,7 +327,9 @@ footer {
         margin-bottom: 10px;
     }
     .achievements{
-        grid-template-columns: 1fr;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
     }
 
 
@@ -338,22 +355,9 @@ footer {
         padding: 8px 12px;
         font-size: 0.9rem;
     }
-}
-.achievements {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.achievements li {
-    padding: 2px 0;
+
 }
 
-
-.achievements {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
 
 
 
