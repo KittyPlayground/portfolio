@@ -7,7 +7,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
     color: #030303;
-    overflow:hidden;
+
 }
 
 .hero {
@@ -18,7 +18,7 @@ body {
     justify-content: center;
     height: 100vh;
     text-align: center;
-    overflow: hidden;
+
 }
 
 .hero::before {
