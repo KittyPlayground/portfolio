@@ -1,0 +1,91 @@
+
+.project-card {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #66B6CC, #FF6CCE);
+    flex-direction: column; /* Stack items vertically */
+    border: 1px solid #ccc; /* Optional: Add border */
+    border-radius: 8px; /* Optional: Rounded corners */
+    overflow: hidden; /* Optional: Ensure no overflow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-image img {
+    width: 100%; /* Make image full width */
+    height: auto; /* Maintain aspect ratio */
+
+
+
+}
+
+.project-info {
+    padding: 16px; /* Add some padding */
+    text-align: center; /* Center text */
+}
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+.project-info p {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #030303;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #fcfbfb;
+    color: #FF6CCE;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.github-btn i {
+    margin-right: 8px;
+}
+
+.github-btn:hover {
+    background-color: #FF6CCE;
+    color: #fcfbfb;
+}
+footer {
+    padding: 15px;
+    background-color: #66B6CC;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-nav {
+        width: 100%;
+        left: -100%;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .second-row {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: auto;
+    }
+
+}
+

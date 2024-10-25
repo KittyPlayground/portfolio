@@ -92,18 +92,29 @@ main {
 .mobile-nav ul {
     list-style: none;
     padding: 20px;
+
 }
 
 .mobile-nav ul li {
-    margin: 15px 0;
+    margin: 10px 0;
     text-align: center;
-}
+    display: flex;
+    align-items: center;
 
+}
+.mobile-nav ul li i {
+    color: #fcfbfb;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+.mobile-nav ul li i:hover {
+    color: #FF6CCE;
+}
 .mobile-nav ul li a {
     color: #fcfbfb;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .mobile-nav ul li a:hover {
     color: #FF6CCE;
@@ -163,6 +174,12 @@ p {
     margin: 10px auto;
     padding: 0 20px;
 }
+.details p {
+    color: #fcfbfb;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
 
 .second-row {
     display: grid;
@@ -185,7 +202,12 @@ p {
 .bg-background ,.bg-goals, .bg-achievements, .bg-interests, .bg-extra {
     background: linear-gradient(135deg, #66B6CC, #FF6CCE);
 }
-
+.bg-achievements ul {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+    font-weight: bolder;
+}
 .card h3 {
     font-size: 1rem;
     margin-bottom: 10px;
@@ -203,6 +225,7 @@ p {
     margin-right: 8px;
 
 }
+
 #download {
     background-color:#66B6CC ;
     color: #fff;

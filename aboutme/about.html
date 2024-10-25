@@ -21,11 +21,12 @@
       <i class="fas fa-times"></i>
     </button>
     <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="../service/service.html">Services</a></li>
-      <li><a href="#blogs">Blogs</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-user"></i> About Me</a></li>
+      <li><a href="../service/service.html"><i class="fas fa-briefcase"></i> Services</a></li>
+      <li><a href="../project/project.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li><a href="#blogs"><i class="fas fa-blog"></i> Blogs</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -45,9 +46,11 @@
     <div class="details">
       <div class="card bg-background">
         <h3><i class="fas fa-graduation-cap"></i>Background</h3>
-        <p>I hold an HND in Software Engineering and have developed skills in backend and frontend web design, as well as full-stack development. My backend languages include Java, Python, C#, and Swift. On the frontend, I’m proficient in JavaScript, HTML, CSS, and frameworks like React, Tailwind CSS, and Bootstrap.
-
-          I work with frameworks such as Spring, Flask, Hibernate, JavaFX, ASP.NET Core, and ASP.NET MVC, and I use Entity Framework Core with MySQL for database management. Additionally, I have a strong focus on UI/UX design and use Figma to create user-friendly interfaces.</p>
+        <p>I hold an HND in Software Engineering and possess skills in full-stack development,
+          including backend languages like Java, Python, C#, and Swift. I’m proficient in frontend
+          technologies such as JavaScript, HTML, CSS, and frameworks like React and Bootstrap.
+          I work with Spring, Flask, and ASP.NET, using Entity Framework Core with MySQL for database management.
+          I also focus on UI/UX design and use Figma for user-friendly interfaces.</p>
 
       </div>
       <div class="card bg-achievements">
@@ -89,21 +92,6 @@
 <footer>
   <p>&copy; 2024 Kawodya Arachchige. All rights reserved.</p>
 </footer>
-
-<script>
-  window.addEventListener('load', function () {
-    const toggleBtn = document.querySelector('.toggle-btn');
-    const closeBtn = document.querySelector('.close-btn');
-    const mobileNav = document.querySelector('.mobile-nav');
-
-    toggleBtn.addEventListener('click', function () {
-      mobileNav.classList.toggle('show');
-    });
-    closeBtn.addEventListener('click', function () {
-      mobileNav.classList.remove('show');
-    });
-  });
-</script>
 <script src="../script.js"></script>
 
 </body>
