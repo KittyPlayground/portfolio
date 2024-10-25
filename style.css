@@ -7,7 +7,6 @@
 body {
     font-family: 'Quicksand', sans-serif;
     color: #030303;
-
 }
 
 .hero {
@@ -158,6 +157,9 @@ footer {
     }
     .widget{
         margin: 4px;
+    }
+    .hero{
+        height: auto;
     }
 
 }
