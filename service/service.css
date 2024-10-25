@@ -92,13 +92,26 @@ main {
 
 .mobile-nav ul {
     list-style: none;
-    padding: 10px;
+    padding: 20px;
+
 }
 
 .mobile-nav ul li {
     margin: 10px 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+
 }
+.mobile-nav ul li i {
+    color: #fcfbfb;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+.mobile-nav ul li i:hover {
+    color: #FF6CCE;
+}
+
 
 .mobile-nav ul li a {
     color: #fcfbfb;
@@ -145,6 +158,16 @@ main {
 .second-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+.details.third-row {
+    display: flex;
+    justify-content: center;
+}
+
+.card.long-column {
+    flex: 1 0 80%; /* Adjust width to make it longer */
+    max-width: 800px; /* Optional max-width */
+    text-align: center;
 }
 
 .card {
